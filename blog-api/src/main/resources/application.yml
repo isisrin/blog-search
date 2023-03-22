@@ -1,0 +1,10 @@
+server:
+  port: 8080
+  shutdown: graceful
+spring:
+  profiles:
+    active: local
+  config:
+    import: classpath:application-core.yml
+  application:
+    name: kakaobank-homework

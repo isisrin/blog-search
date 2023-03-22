@@ -1,0 +1,15 @@
+router:
+  routes:
+    - id: KAKAO
+      host: https://dapi.kakao.com
+      timeout: 3000
+      read-timeout: 3000
+      defaultHeaders:
+        authorization: "KakaoAK c1fdec1fe0fb8be395b4c05d315aee0e"
+    - id: NAVER
+      host: https://openapi.naver.com
+      timeout: 3000
+      read-timeout: 3000
+      defaultHeaders:
+        x-naver-client-id: "lIBmJSZF6TQDazQZzUbx"
+        x-naver-client-secret: "aPNffHwusP"

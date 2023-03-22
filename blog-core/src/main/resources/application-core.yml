@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    hikari:
+      driver-class-name: org.h2.Driver
+      jdbc-url: jdbc:h2:mem:blogdb
+      username: sa
+      connection-timeout: 30000
+      maximum-pool-size: 20
+  jpa:
+    hibernate:
+      ddl-auto: create
+    open-in-view: false
+  config:
+    import: classpath:router.yml
+  data:
+    redis:
+      host: localhost
+      port: 6379
